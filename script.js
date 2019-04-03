@@ -1,7 +1,11 @@
-var a = 1664525;
-var c = 1013904223;
-var m = Math.pow(2,31);
-var seed = 12234;
+import Square from "./src/entity.js";
+import * as DATA from "./src/data.json";
+
+console.log(DATA);
+let a = 1664525;
+let c = 1013904223;
+let m = Math.pow(2,31);
+let seed = 12234;
 
 function nextRand() {
     seed = (a * seed + c) % m;
@@ -11,14 +15,15 @@ function nextRandFloat() {
     return nextRand() / m;
 }
 
-var canvas = document.getElementById("canvas");
-var context = canvas.getContext('2d');
-var y = 0;
-
+let canvas = document.getElementById("canvas");
+let context = canvas.getContext('2d');
+let y = 0;
+let square1 = new Square();
+console.log(square1);
 draw();
 
 function draw() {
-    for (var x = 0; x <550; x++ ){
+    for ( let x = 0; x <550; x++ ){
         if (nextRandFloat() < 0.5){
             context.fillRect(x, y, 1, 1);
         };
@@ -26,5 +31,6 @@ function draw() {
     y++;
     if ( y < 600 ){
         requestAnimationFrame(draw);
+        console.log()
     };
 };
