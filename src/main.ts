@@ -1,6 +1,8 @@
-import Test from './class';
+import Player from './player';
+import Entity from './entity';
 
-window.onload = function () {
-    let o = new Test();
-    o.show();
-};
+let player = new Player(100, 3);
+let enemy = new Entity(2,4);
+
+console.log(enemy);
+console.log(player);

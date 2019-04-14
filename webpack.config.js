@@ -17,7 +17,7 @@ module.exports = {
     resolve: {
         extensions:[ ".webpack.js", ".web.js", ".ts", ".js" ]
     },
-    mode : "production",
+    mode : "development",
     //mode: "development",
     watch : true,
     devServer: {
