@@ -1,15 +1,14 @@
 export default class Player {
 
-    playerY = 0;
-    playerX = 0;
-    playerName = '';
+    private playerY: number;
+    private playerX: number;
+    private playerName: string;
 
-    setPlayerName(name:string){
-        this.playerName = name;
-    };
-
-    constructor(x:number, y:number){
+    constructor(x:number, y:number, name){
         this.playerY = y;
         this.playerX = x;
+        this.playerName = name;
+        console.log(this.playerName);
     };
+
 };

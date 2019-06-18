@@ -7,4 +7,5 @@ export default class Entity{
         this.posX = x;
         this.posY = y;
     };
+
 };
