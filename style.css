@@ -1,4 +1,7 @@
+*{
+    margin: 0;
+    box-sizing: content-box;
+}
 canvas {
-    border: 1px solid red;
 
 }

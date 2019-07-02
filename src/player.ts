@@ -1,15 +1,20 @@
 export default class Player {
 
-    private health: number;
-    private playerY: number;
-    private playerX: number;
-    private playerName: string;
-    private damage: number;
+    public health: number;
+    public posY: number;
+    public posX: number;
+    public height: number;
+    public width: number;
+    public playerName: string;
+    public damage: number;
+    public color: string = "#42f4e2";
 
-    constructor(x:number, y:number, name:string){
-        this.playerX = x;
-        this.playerY = y;
+    constructor(x:number, y:number, name:string, width, height){
+        this.health = 100;
+        this.posX = x;
+        this.posY = y;
         this.playerName = name;
+        this.width = width;
+        this.height = height;
     };
-
 };

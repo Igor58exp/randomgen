@@ -10,5 +10,9 @@
   },
   "scripts": {
     "start:dev": "webpack-dev-server"
+  },
+  "dependencies": {
+    "pixi.js": "^5.0.4",
+    "stats.js": "^0.17.0"
   }
 }

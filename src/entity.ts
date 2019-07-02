@@ -1,21 +1,17 @@
 export default class Entity{
 
-    public posX: number = 1;
-    public posY: number = 1;
-    private color: string;
+    public posX: number;
+    public posY: number;
+    public height: number;
+    public width: number;
+    public color: string;
 
-    constructor(x:number, y:number) {
+    constructor(x:number, y:number, height:number, width:number, color:string) {
         this.posX = x;
         this.posY = y;
-        this.color = this.generateColor();
+        this.height = height;
+        this.width = width
+        this.color = color;
     };
 
-    generateColor(){
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        };
-        return color;
-    };
 };
