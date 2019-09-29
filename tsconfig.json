@@ -8,5 +8,5 @@
   "exclude": [
     "node_modules"
   ],
-  "files": ["src/main.ts"]
+  "files": [ "src/main.ts", "node_modules/pixi.js/pixi.js.d.ts" ]
 }
