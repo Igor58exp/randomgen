@@ -17,5 +17,4 @@ export default class Entity{
         this.width = width
         this.color = color;
     };
-
 };

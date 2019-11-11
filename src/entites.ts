@@ -1,5 +1,9 @@
 export module entites {
 
+	function generateName () {
+		return 'asdfasdf';
+	};
+
 	export class Player {
 
 		public health: number;
@@ -7,7 +11,7 @@ export module entites {
 		public posX: number;
 		public height: number;
 		public width: number;
-		public playerName: string;
+		public name: string;
 		public damage: number;
 		public color: string = "#42f4e2";
 		public currentWeapon:any = {};
@@ -16,13 +20,17 @@ export module entites {
 			this.health = 100;
 			this.posX = x;
 			this.posY = y;
-			this.playerName = name;
+			this.name = name;
 			this.width = width;
 			this.height = height;
+			this.damage = 30;
 		};
 	};
 
 	export class Enemy extends Player {
 
+		constructor(){
+			super(2, 2, generateName(), 2, 2);
+		};
 	};
 };
